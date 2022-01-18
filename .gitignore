@@ -37,4 +37,5 @@ build/
 env.sh
 
 ### Spigot ###
-server/
+server/*
+!server/eula.txt
