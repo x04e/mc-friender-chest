@@ -2,16 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.x04e.minecraft.mcsharedstorage</groupId>
-  <artifactId>mc-shared-storage</artifactId>
+  <groupId>com.x04e.minecraft.mcfrienderchest</groupId>
+  <artifactId>mc-friender-chest</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>mc-shared-storage</name>
-  <url>http://github.com/x04e/mc-shared-storage</url>
+  <name>mc-friender-chest</name>
+  <url>http://github.com/x04e/mc-friender-chest</url>
 
   <properties>
 
-    <mainClass>com.x04e.minecraft.mcsharedstorage.App</mainClass>
+    <mainClass>com.x04e.minecraft.mcfrienderchest.App</mainClass>
     <minecraft.version>1.18</minecraft.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
