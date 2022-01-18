@@ -11,6 +11,7 @@ if [ ! -f "./server/spigot-1.18.1.jar" ]; then
     echo "Done"
 fi
 
+mvn package
 cd server
 echo -e "\n### Starting Spigot ###############################"
 java -Xms1G -Xmx2G -XX:+UseG1GC -jar 'spigot-1.18.1.jar' nogui
