@@ -4,4 +4,12 @@ if [ -f "./env.sh" ]; then
     source ./env.sh
 fi
 
+if [ ! -f "./server/spigot-1.18.1.jar" ]; then
+    echo "Spigot jar not found, fetching..."
+    mkdir "./server"
+    curl -o "./server/spigot-1.18.1.jar" "https://download.getbukkit.org/spigot/spigot-1.18.1.jar"
+    echo "Done"
+fi
+
+echo "\n### Starting Spigot ###############################"
 java -Xms1G -Xmx2G -XX:+UseG1GC -jar ./server/spigot-1.18.1.jar nogui
