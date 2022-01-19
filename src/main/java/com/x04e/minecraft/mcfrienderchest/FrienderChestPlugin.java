@@ -7,31 +7,28 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ShapedRecipe;
 
-/**
- * Hello world!
- *
- */
 public class FrienderChestPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
         ItemStack item = new ItemStack(Material.ENDER_CHEST);
-
         ItemMeta meta = item.getItemMeta();
-        getLogger().info(meta.toString());
-        meta.setDisplayName("§aEmerald Sword");
+
+        meta.setDisplayName("§aFriender Chest");
+
+        meta.setCustomModelData(1234567);
         item.setItemMeta(meta);
 
-        NamespacedKey key = new NamespacedKey(this, "");
+        NamespacedKey key = new NamespacedKey(this, "friender_chest");
         ShapedRecipe recipe = new ShapedRecipe(key, item);
         recipe.shape(
-            " E ",
-            " E ",
-            " S "
+            "OOO",
+            "OEO",
+            "ODO"
         );
-        recipe.setIngredient('E', Material.EMERALD);
+        recipe.setIngredient('O', Material.OBSIDIAN);
         recipe.setIngredient('D', Material.RED_DYE);
-        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('E', Material.ENDER_EYE);
         Bukkit.addRecipe(recipe);
     }
 
